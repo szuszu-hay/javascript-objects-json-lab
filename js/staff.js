@@ -16,5 +16,8 @@
         });
     })
 
+    .catch((error) => {
+        console.error("Error loading JSON:", error);
+    });
     
 })();

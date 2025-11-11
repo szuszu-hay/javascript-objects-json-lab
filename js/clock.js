@@ -23,11 +23,12 @@
         const rotMinutes = minutes * 6 - 90
         minHand.style.transform = `rotate(${rotMinutes}deg)`;
 
-        const hours = myDate.getHours();
+        let hours = myDate.getHours();
         hours = hours + minutes/60
         const rotHours = hours * 30 - 90
         hrHand.style.transform = `rotate(${rotHours}deg)`;
         }
+
     setInterval(updateTime, 1000);
     updateTime();
 
